@@ -1,0 +1,119 @@
+/* Add the animation for fade-in-left */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.signup-container {
+    background-color: #3b3b3b; /* Abu-abu lebih gelap */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto;
+    animation: fadeInLeft 1s ease-out; /* Apply fade-in-left animation */
+}
+
+.signup-container h2 {
+    color: #ffffff; /* Warna putih untuk Sign Up */
+    font-weight: 700;
+}
+
+.form-label {
+    color: #ffffff; /* Warna label menjadi putih */
+}
+
+.form-control {
+    background-color: #ffffff; /* Warna input putih */
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #1e90ff; /* Fokus biru yang elegan */
+    box-shadow: 0px 0px 8px rgba(30, 144, 255, 0.4);
+}
+
+.btn-primary {
+    background-color: #001f3f; /* Navy color */
+    border-color: #001f3f;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #001c2d; /* Darker navy on hover */
+    border-color: #001c2d;
+}
+
+a {
+    color: #001f3f; /* Navy color for sign in link */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #001c2d; /* Darker navy on hover */
+}
+
+.form-text {
+    color: #7f8c8d; /* Warna teks kecil */
+}
+
+.input-group-text {
+    background-color: #ffffff; /* Warna input teks abu-abu terang */
+    border-color: #ccc;
+    color: #333;
+    border-radius: 8px 0 0 8px;
+}
+
+.right-space {
+    background-color: #001f3f; /* Warna navy */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%; /* Mengisi 60% layar */
+    height: 100%;
+    color: #ffffff; /* Teks putih */
+    padding: 20px;
+}
+
+.right-space h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.right-space p {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.text-light {
+    color: #ffffff; /* Teks putih untuk elemen */
+}
+
+@media (max-width: 992px) {
+    .right-space {
+        display: none; /* Hilangkan ruang kanan pada layar kecil */
+    }
+    .signup-container {
+        margin: auto;
+    }
+}

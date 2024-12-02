@@ -1,0 +1,118 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body {
+    background-color: #001f3f;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Tengah horizontal */
+    align-items: center; /* Tengah vertical */
+    overflow: hidden;
+}
+
+.login-container {
+    background-color: #f2f2f2; 
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto;
+}
+
+.login-container h2 {
+    color: #001f3f;
+    font-weight: 700;
+}
+
+.form-label {
+    color: #000000;
+}
+
+.form-control {
+    background-color: #221c1ca6;
+    border: 1px solid #ccc;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #1e90ff;
+    box-shadow: 0px 0px 8px rgba(30, 144, 255, 0.4);
+}
+
+.btn-primary {
+    background-color: #001f3f;
+    border-color: #001f3f;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #001c2d;
+    border-color: #001c2d;
+}
+
+a {
+    color: #001f3f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #001c2d;
+}
+
+.form-text {
+    color: #636c6d;
+}
+
+.input-group-text {
+    background-color: #ffffff;
+    border-color: #ccc;
+    color: #333;
+    border-radius: 8px 0 0 8px;
+}
+
+/* Right space untuk logo dan teks */
+.right-space {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column; /* Vertikal */
+    align-items: center; /* Tengah horizontal */
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    color: #000000;
+    padding: 20px;
+}
+
+.right-space img {
+    max-width: 150px; /* Sesuaikan ukuran logo */
+    width: auto;
+    height: auto;
+}
+
+.right-space p {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #001f3f;
+    animation: fadeInRight 1s ease-out;
+}
+
+/* Animasi fade-in-right untuk logo dan tulisan */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .right-space {
+        display: none;
+    }
+}
